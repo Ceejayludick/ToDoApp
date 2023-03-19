@@ -15,3 +15,44 @@ ul li {
     background: #eee;
     font-size: 18px;
 }
+
+/*background color change when hovering over li*/
+ul li:hover {
+    background: greenyellow;
+}
+
+/* styling header */
+header {
+    background-color: darkturquoise;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* styling the input (what you type) */
+#myInput {
+    margin: 0%;
+    border: 2%;
+    width: 80%;
+    padding: 10%;
+    float: left;
+    font-size: 15%;
+}
+
+/* add button styling*/
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+  }
