@@ -25,14 +25,10 @@
     user-select: none;
   }
   
-  /* Set all odd list items to a different color (zebra-stripes) */
-  ul li:nth-child(odd) {
-    background: #f9f9f9;
-  }
   
   /* Darker background-color on hover */
   ul li:hover {
-    background: #ddd;
+    background: rgb(191, 187, 242);
   }
   
   /* When clicked on, add a background color and strike out text */
@@ -71,7 +67,7 @@
   
   /* Style the header */
   .header {
-    background-color: #f44336;
+    background-color:darkslateblue;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -93,6 +89,7 @@
     padding: 10px;
     float: left;
     font-size: 16px;
+    border-radius: 30px;
   }
   
   /* Style the "Add" button */
@@ -104,11 +101,16 @@
     float: left;
     text-align: center;
     font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
+    border-radius: 30px;
   }
   
   .addBtn:hover {
     background-color: #bbb;
+  }
+
+  /* CSS Media Queries for phone compatibility */
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
   }
