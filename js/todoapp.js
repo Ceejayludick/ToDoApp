@@ -27,7 +27,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// js code to add to list when user types in 'type here'
 function newElement() {
   const li = document.createElement("li");
   const inputValue = document.getElementById("myInput").value;
@@ -52,4 +52,9 @@ function newElement() {
       div.style.display = "none";
     }
   }
+
+
+  // code to stop page refreshing 
+
+  event.preventDefault();
 }
