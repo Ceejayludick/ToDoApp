@@ -1,3 +1,5 @@
+
+
 // Create a "close" button and append it to each list item
 const myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -20,12 +22,14 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Add a "checked" symbol when clicking on a list item
-const list = document.querySelector('ul');
+var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
 }, false);
+
+
 
 // js code to add to list when user types in 'type here'
 function newElement() {
@@ -52,9 +56,5 @@ function newElement() {
       div.style.display = "none";
     }
   }
-
-
-  // code to stop page refreshing 
-
-  event.preventDefault();
 }
+
