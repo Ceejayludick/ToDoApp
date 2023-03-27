@@ -9,7 +9,7 @@
     padding: 0;
   }
   
-  /* Style the list items */
+  /* styling for added list items */
   ul li {
     cursor: pointer;
     position: relative;
@@ -18,6 +18,8 @@
     font-size: 18px;
     transition: 0.2s;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+
   
  /* make the list items unselectable */
  -webkit-user-select: none;
@@ -25,6 +27,8 @@
  -ms-user-select: none;
  user-select: none;
 }
+
+
   
 
  /* Darker background-color on hover */
@@ -32,6 +36,17 @@
   background: rgb(191, 187, 242);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin: 5%;
+  border: 5%;
+  padding: 1%;
+  background: url(cool-background.png);
+}
 
   /* code to add a background color and strike out text */
   ul li.checked {
@@ -81,6 +96,7 @@ ul li.checked {
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
   }
   
   /* Clear floats after the header */
@@ -99,7 +115,7 @@ ul li.checked {
     padding: 10px;
     float: left;
     font-size: 16px;
-    border-radius: 30px;
+    border-radius: 50px;
   }
   
   /* Style the "Add" button */
