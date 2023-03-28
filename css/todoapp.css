@@ -4,13 +4,13 @@
   }
   
   /* Remove margins and padding from the list */
-  ul {
+  ol {
     margin: 0;
     padding: 0;
   }
   
   /* styling for added list items */
-  ul li {
+  ol li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -32,7 +32,7 @@
   
 
  /* Darker background-color on hover */
- ul li:hover {
+ ol li:hover {
   background: rgb(191, 187, 242);
 }
 
@@ -49,13 +49,13 @@ body {
 }
 
   /* code to add a background color and strike out text */
-  ul li.checked {
+  ol li.checked {
     background: #d9d9d9;
     text-decoration: line-through;
   }
   
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+ol li.checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
@@ -69,7 +69,7 @@ ul li.checked::before {
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+ol li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
@@ -118,7 +118,7 @@ ul li.checked {
     border-radius: 50px;
   }
   
-  /* Style the "Add" button */
+  /* styling for 'add to list' button */
   .addBtn {
     padding: 10px;
     width: 25%;
@@ -142,6 +142,6 @@ ul li.checked {
   }
 
 /* colour change when mouse hovers over li */
-ul li:hover {
+ol li:hover {
   background: rgb(191, 187, 242);
 }
