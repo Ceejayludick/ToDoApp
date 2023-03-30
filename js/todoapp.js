@@ -1,6 +1,13 @@
 
 
-// code to make a delete/close for every list item
+// code to save data to Local Storage 
+let input = document.getElementById('saveServer').value;
+localStorage.setItem('server', input);
+
+letObj = JSON.parse(JSONData);
+console.log(obj.myUL);
+
+// code to make a delete/close button for every list item
 const myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -15,17 +22,19 @@ for (i = 0; i < myNodelist.length; i++) {
 const close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
+  close[i].onclick = function () {
     let div = this.parentElement;
     div.style.display = "none";
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// code to change colour of 'completed' list item
+const li = document.getElementById('myUL');
 
-
-// code for saving input values 
-
+li.addEventListener('click', function onclick() {
+  li.style.backgroundColor = 'salmon';
+  li.style.color = 'white'
+});
 
 
 // js code to add to list when user types in 'type here'
@@ -35,7 +44,7 @@ function newElement() {
   const t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("You must write something!"); // code for errors
   } else {
     document.getElementById("myUL").appendChild(li);
   }
@@ -48,10 +57,13 @@ function newElement() {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
+    close[i].onclick = function () {
       let div = this.parentElement;
       div.style.display = "none";
     }
   }
 }
+
+
+
 
